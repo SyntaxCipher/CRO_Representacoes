@@ -5,19 +5,16 @@
 }
 
 .sobre_mim{
-    display: flex;
     justify-content: center; 
     align-items: center;
-    height: 930px;
-    
-    
+    padding: 200px;
 }
 
 .sobre_mim_conteudo{
     display: flex;
-    padding: 200px;
-    gap: 50px;
+    gap: 150px;
     margin-top: 100px;
+    
 }
 
 .conteudo_sobre{
@@ -26,12 +23,12 @@
 }
 
 .conteudo_sobre h1{
-    font-size: 100px;
+    font-size: 50px;
     
 }
 
 .conteudo_sobre p{
-    font-size: 51px;
+    font-size: 30px;
     
 }
 
