@@ -2,15 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Roboto Slab", serif;
 }
+
+
 a {
     text-decoration: none; 
 }
 
 .header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido branco */
     padding-inline: 80px; 
+    position: fixed; /* Torna o cabeçalho fixo no topo da página */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura da página */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros conteúdos */
+    backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque de fundo (opcional) */
 }
 
 .nav {
@@ -59,8 +67,58 @@ a {
     margin: 5px auto;
     background-color: rgb(0, 0, 0);
     transition: all 0.3s ease-in-out; 
-    
+} 
+
+@media (max-width: 768px) {
+    .hamburguer {
+        display: block; 
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0; 
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); 
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); 
+    }
+
+    .nav-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10; 
+    }
+
+    .nav-list.active {
+        display: flex; 
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 20px; 
+    }
+
+    .nav.active .logo img {
+        width: 150px; 
+    }
 }
+
+body {
+    padding-top: 100px; /* Adiciona padding no topo do corpo para evitar que o conteúdo fique escondido atrás da navegação fixa */
+}
+
 
 
 
