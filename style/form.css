@@ -1,0 +1,79 @@
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #D9D9D9;
+}
+
+
+.form_conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 43, 43);
+    padding: 10px 45px;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;;
+}
+
+.form_conteudo h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.form_conteudo form{
+    display: flex;    
+    flex-direction: column;
+    width: 100%;
+}
+
+.form_conteudo label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.form_conteudo input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.form_conteudo input:focus{
+    border-radius: 16px;
+}
+
+.form_conteudo button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+.form_conteudo button:hover{
+    background: #f5f5f5;
+    border-radius: 16px;
+    color: rgb(43, 43, 43)
+}
+
+/*Fale Conosco pelo Whatsapp*/
+.whats{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.whats img{
+    width: 100px;
+}
