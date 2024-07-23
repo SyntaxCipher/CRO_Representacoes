@@ -116,17 +116,12 @@ a {
 }
 
 body {
-    padding-top: 100px; /* Adiciona padding no topo do corpo para evitar que o conteúdo fique escondido atrás da navegação fixa */
+    padding-top: 100px; 
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
     .hamburguer {
-        display: block; 
+        display: block;
         margin-left: auto;
     }
 
