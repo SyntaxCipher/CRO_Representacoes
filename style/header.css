@@ -116,17 +116,13 @@ a {
 }
 
 body {
-    padding-top: 100px; /* Adiciona padding no topo do corpo para evitar que o conteúdo fique escondido atrás da navegação fixa */
+    padding-top: 100px; 
 }
-
-
-
-
-
 
 @media (max-width: 768px) {
     .hamburguer {
-        display: block; 
+        display: block;
+        margin-left: auto;
     }
 
     .hamburguer.active .bar:nth-child(2) {
@@ -141,9 +137,12 @@ body {
         transform: translateY(-8px) rotate(-45deg); 
     }
 
+    .logo{
+        margin-top: 20px;
+    }
+
     .nav-list {
        position: fixed;
-       left: -100%;
        top: 90px;
        gap: 0;
        border-radius: 0 0 20px 20px ;
