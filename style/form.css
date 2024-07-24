@@ -1,9 +1,12 @@
 .form{
     display: flex;
-    align-items: center;
+    
     justify-content: center;
-    min-height: 100vh;
-    background-color: #D9D9D9;
+
+    background-image: url(/img/budget.png);
+    background-repeat: 2rem;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 
@@ -11,7 +14,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgb(43, 43, 43);
     padding: 10px 45px;
     width: 500px;
@@ -25,6 +27,7 @@
 }
 
 .form_conteudo form{
+    
     display: flex;    
     flex-direction: column;
     width: 100%;
@@ -46,6 +49,19 @@
 }
 
 .form_conteudo input:focus{
+    border-radius: 16px;
+}
+
+.form_conteudo select{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.form_conteudo select:focus{
     border-radius: 16px;
 }
 
@@ -77,3 +93,4 @@
 .whats img{
     width: 100px;
 }
+

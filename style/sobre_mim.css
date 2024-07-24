@@ -5,9 +5,9 @@
 }
 
 .sobre_mim{
+
     background-image: url(/img/a-sophisticated-corporate-background-design-featur-Lxui8DSsS5OvdByA14dLRQ-TEpn4zIBSSG9g1hpo8hG6A.jpeg);
     background-repeat: 2rem;
-   
     padding: 200px;
     border-radius: 10px;
 }
@@ -51,8 +51,9 @@
 
 
 .img_sobre{
-
-    width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
     
 }
 
