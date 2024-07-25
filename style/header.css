@@ -5,20 +5,24 @@
     font-family: "Roboto Slab", serif;
 }
 
+.container-body{
+    max-width: 1536px;
+    margin: auto;
+}
 
 a {
     text-decoration: none; 
 }
 
 .header {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido branco */
-    padding-inline: 80px; 
-    position: fixed; /* Torna o cabeçalho fixo no topo da página */
-    width: 100%; /* Garante que o cabeçalho ocupe toda a largura da página */
+    background-color: white; 
+    padding-inline: 100px; 
+    position: fixed;
+    width: 100%; 
     top: 0;
     left: 0;
-    z-index: 1000; /* Garante que o cabeçalho fique acima de outros conteúdos */
-    backdrop-filter: blur(10px); /* Adiciona um efeito de desfoque de fundo (opcional) */
+    z-index: 1000;
+    backdrop-filter: blur(10px); 
 }
 
 .nav {
@@ -31,7 +35,7 @@ a {
 }
 
 .logo img {
-    width: 150px;
+    width: 120px;
 }
 
 .nav-list {
@@ -41,7 +45,7 @@ a {
 }
 
 .nav-list a {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(0, 0, 0);
     padding-block: 16px; 
 }
@@ -65,13 +69,34 @@ a {
     height: 3px;
     border-radius: 2px;
     margin: 5px auto;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(22, 22, 22);
     transition: all 0.3s ease-in-out; 
 } 
+
+body {
+    padding-top: 100px; 
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-inline: 40px;
+    }
+
+    .nav-list a {
+        font-size: 20px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
+
+
 
 @media (max-width: 768px) {
     .hamburguer {
         display: block; 
+        margin-left: auto;
     }
 
     .hamburguer.active .bar:nth-child(2) {
@@ -89,114 +114,37 @@ a {
     .nav-list {
         display: none;
         position: fixed;
-        top: 0;
+        top: 90px;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
+        border-radius: 0 0 20px 20px;
         background-color: rgba(255, 255, 255, 0.95);
         flex-direction: column;
         justify-content: center;
         align-items: center;
         z-index: 10; 
+        gap: 10px;
     }
 
     .nav-list.active {
         display: flex; 
     }
 
-    .logo {
-        position: absolute;
-        top: 10px;
-        left: 20px; 
-    }
-
-    .nav.active .logo img {
-        width: 150px; 
-    }
-}
-
-body {
-    padding-top: 100px; 
-}
-
-@media (max-width: 1024px) {
-    .header {
-        padding-inline: 40px;
-    }
-
-    .nav-list a {
-        font-size: 25px;
-    }
-
-    .logo img {
-        width: 120px;
-    }
-}
-
-@media (max-width:1366px){
-    .header {
-        padding-inline: 40px;
-    }
-
-    .nav-list a {
-        font-size: 25px;
-    }
-
-    .logo img {
-        width: 120px;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-
-    
-    .hamburguer {
-        display: block;
-        margin-left: auto;
-    }
-
-    .hamburguer.active .bar:nth-child(2) {
-        opacity: 0; 
-    }
-
-    .hamburguer.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg); 
-    }
-
-    .hamburguer.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg); 
-    }
-
-    .logo{
-        margin-top: 20px;
-    }
-
-    .nav-list {
-       position: fixed;
-       top: 90px;
-       gap: 0;
-       border-radius: 0 0 20px 20px ;
-       background-color: white;
-       text-align: center;
-       flex-direction: column;
-       width: 100%;
-       transition: 0.3s;
-       
-    }
 
     .nav-item{
         margin: 16px 0;
     }
 
-    .nav-list.active{
-        left: 0;
+    
+
+    .logo {
+        width: 100px;
     }
 
-    .logo img{
-        width: 75px;
-    }
-
-   
 }
+
+
+
+
+
