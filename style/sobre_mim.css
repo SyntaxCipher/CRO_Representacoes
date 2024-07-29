@@ -4,17 +4,16 @@
     font-family: "Roboto Slab", serif;
 }
 
-
-.container-body{
-    max-width: 1536px;
-    margin: auto;
+.container-body {
+    max-width: 2560px;
 }
 
 .sobre_mim {
-    background-image: url(/img/a-sophisticated-corporate-background-design-featur-Lxui8DSsS5OvdByA14dLRQ-TEpn4zIBSSG9g1hpo8hG6A.jpeg);
-    background-repeat: 2rem;
-    padding: 200px;
+    background-image: url("/img/a-sophisticated-corporate-background-design-featur-Lxui8DSsS5OvdByA14dLRQ-TEpn4zIBSSG9g1hpo8hG6A.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
     border-radius: 10px;
+    padding: 200px;
 }
 
 .sobre_mim a {
