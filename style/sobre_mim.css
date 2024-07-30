@@ -16,11 +16,6 @@
     padding: 200px;
 }
 
-.sobre_mim a {
-    text-decoration: none;
-    font-size: 50px;
-    padding: 15px;
-}
 
 .sobre_mim_conteudo {
     display: flex;
@@ -33,7 +28,6 @@
 
 .conteudo_sobre {
     margin-left: 20px;
-    width: 1000px;
 }
 
 .conteudo_sobre h1 {
@@ -42,6 +36,7 @@
 }
 
 .conteudo_sobre p {
+    display: flex;
     font-size: 30px;
     margin-bottom: 100px;
 }
@@ -62,3 +57,42 @@
     text-decoration: none;
 }
 
+@media (max-width: 768px) {
+
+    
+    .sobre_mim {
+        padding: 30px;
+    }
+    
+    
+    .sobre_mim_conteudo {
+        flex-direction: column;
+        gap: 0px;
+    }
+    
+    .conteudo_sobre {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+    
+    .conteudo_sobre h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .conteudo_sobre p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .img_sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .img_sobre img {
+        width: 150px;
+    }
+    
+   
+}
