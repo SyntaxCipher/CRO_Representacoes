@@ -71,6 +71,7 @@ html {
         flex-direction: column;
         gap: 0px;
     }
+    
     .conteudo_sobre{
         flex-direction: column;
         margin-left: 20px;
@@ -87,6 +88,7 @@ html {
     .img_sobre {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        width: 700px;
     }
     .img_sobre img{
         width: 200px;
@@ -113,6 +115,7 @@ html {
     .img_sobre {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        width: 500px;
     }
     
     .img_sobre img {
@@ -121,6 +124,13 @@ html {
     
 }
 
+@media (max-width: 768px) {
+    .img_sobre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 300px;
+    }
+}
 
 @media (max-width: 320px){
 
@@ -129,6 +139,11 @@ html {
 
     }
 
+    .img_sobre {
+        
+        
+        width: 250px;
+    }
     .conteudo_sobre h1 {
         font-size: 20px;
     }
