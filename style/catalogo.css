@@ -70,6 +70,21 @@
     margin: 20px;
 }
 
+@media (max-width: 1440px){
+   .aspas2 {
+        margin-left: 88%;
+        width: 100px;
+    }
+    .catalogo_conteudo img {
+        width: 500px;
+    }
+
+    .catalogo_texto img {
+        width: 30px;
+
+    }
+}
+
 @media (max-width: 1024px) {
 
     .catalogo1 {
