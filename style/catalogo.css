@@ -76,11 +76,11 @@
         width: 100px;
     }
     .catalogo_conteudo img {
-        width: 500px;
+        min-width: 200px;
     }
 
     .catalogo_texto img {
-        width: 30px;
+        min-width: 30px;
 
     }
 }
