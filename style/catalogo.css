@@ -1,5 +1,5 @@
 .catalogo1 {
-    padding: 200px;
+    padding: 100px;
     background-color: #D9D9D9;
     border-radius: 10px;
 }
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 100px;
 }
 
 .catalogo_botao {
@@ -41,19 +41,19 @@
 }
 
 .catalogo_conteudo img {
-    width: 300px;
+    width: 600px;
     border-radius: 5px;
     
 }
 
 
 .catalogo_texto img {
-    width: 80px;
+    width: 50px;
 
 }
 
 .aspas2 {
-    margin-left: 99%;
+    margin-left: 88%;
 }
 
 
@@ -93,11 +93,11 @@
     }
 
     .catalogo_conteudo {
-        gap: 150px;
+        gap: 30px;
     }
 
     .catalogo_conteudo img {
-        width: 500px;
+        width: 600px;
     }
 
     .catalogo_texto img {
