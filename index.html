@@ -29,8 +29,7 @@
                 <a href="index.html" class="logo"><img src="img/Representações.png" alt=""></a>
                 <ul class="nav-list">
                     <li class="nav-item"><a href="/#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">Orçamento</a></li>
+                    <li class="nav-item"><a href="/#contato" class="nav-link">Contato</a></li>
                 </ul>
 
                 <div class="hamburguer">
@@ -52,7 +51,7 @@
                         segmentos do mercado. Com foco no atendimento personalizado e produtos de
                         qualidade, busca construir parcerias sólidas e contribuir para o sucesso dos
                         seus clientes.</p>
-                    
+
                 </div>
                 <div class="img_sobre">
                     <a href="/#royal"><img src="img/logo_royal.png" alt="Logo Royal "></a>
@@ -207,7 +206,7 @@
 
     <!-- formulario-->
 
-    <section class="form">
+    <section class="form" id="contato">
         <div class="form_conteudo">
 
             <h2>Contato</h2>
@@ -238,9 +237,9 @@
                 <textarea name="Mensagem" cols="30" rows="10"></textarea>
                 <button type="submit">Enviar</button>
 
-                <input type="hidden" name="accessKey" value="2b66afe8-b4fb-4baf-ac46-bf912e9fd667">
+
                 <!-- alterar para dados da cliente-->
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+                
             </form>
         </div>
     </section>
@@ -249,14 +248,12 @@
 
     <footer class="footer">
         <div id="footer_content">
-            <div id="footer_contacts">
-                <div class="logo1">
-                    <a href="/#home" class="nav-link"><img src="img/Representações-branca.png"
-                            alt="logo CRO Representações"></a>
-                </div>
-                <p></p>
-
+            <div class="logo1">
+                <a href="/#home" class="nav-link"><img src="img/Representações-branca.png"
+                        alt="logo CRO Representações"></a>
             </div>
+
+
             <ul class="footer-list">
                 <li>
                     <a href="/#royal" class="footer-link">Royal</a>
@@ -268,7 +265,7 @@
                     <a href="/#triangulo" class="footer-link">Triangulo</a>
                 </li>
             </ul>
-            <ul class="footer-list">
+            <ul class="footer-list2">
                 <li>
                     <a href="/#bertpan" class="footer-link">Bertpan</a>
                 </li>
@@ -280,13 +277,15 @@
                 </li>
             </ul>
             <div id="footer_subscribe">
-                <h2>Se inscreva para receber promoções!</h2>
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button onclick="email()">
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
+                
+                    <h2>Se inscreva para receber promoções!</h2>
+                    <form id="input_group" action="https://formsubmit.co/danielvnso7@gmail.com" method="POST">
+                        <input name="Email para promoções"type="email" id="email">
+                        <button type="submit" onclick="email()">
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </form>
+                
             </div>
         </div>
 

@@ -95,3 +95,12 @@
     width: 100px;
 }
 
+@media screen and (max-width:380px) {
+    .form_conteudo {
+        border-radius: 5px;
+        padding: 10px 10px;
+    }
+    .whats img{
+        width: 50px;
+    }
+}
