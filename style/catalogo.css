@@ -220,5 +220,6 @@
     
     .catalogo_texto{
         grid-area: texto;
+        padding-top: 100px;
     }
 }
